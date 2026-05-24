@@ -16,7 +16,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 echo 'Building docker image'
-                bat 'docker build -t my-fastapi-app-automated'
+                bat 'docker build -t my-fastapi-app-automated .'
             }
         }
     }
