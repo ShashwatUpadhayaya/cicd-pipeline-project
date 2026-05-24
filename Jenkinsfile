@@ -10,13 +10,13 @@ pipeline {
         stage('Test code') {
             steps{
                 echo 'Checking the syntax'
-                sh 'python -m py_compile main.py'
+                bat 'python -m py_compile main.py'
             }
         }
         stage('Build docker image'){
             steps{
                 echo 'Building docker image'
-                sh 'docker build -t my-fastapi-app-automated'
+                bat 'docker build -t my-fastapi-app-automated'
             }
         }
     }
