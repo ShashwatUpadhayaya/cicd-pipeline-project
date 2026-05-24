@@ -12,3 +12,14 @@ Before automating the deployment, a lightweight FastAPI application was engineer
 
 **Visual Proof: Local Execution**
 ![Local App Running](./local_app_running.png)
+
+## Phase 2: Containerization
+To ensure environment consistency across all deployments, the application was packaged into a Docker container.
+
+**Actions Completed:**
+* Authored a `Dockerfile` utilizing a lightweight Python 3.9 base image.
+* Built and tagged a custom Docker image.
+* Successfully deployed the containerized application on local port 8000.
+
+**Visual Proof: Docker Execution**
+![Docker App Running](./docker_app_running.png)
