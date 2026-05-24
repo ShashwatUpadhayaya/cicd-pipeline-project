@@ -23,3 +23,14 @@ To ensure environment consistency across all deployments, the application was pa
 
 **Visual Proof: Docker Execution**
 ![Docker App Running](./docker_app_running.png)
+
+## Phase 3: CI/CD Automation
+To orchestrate the build and testing process, a Jenkins declarative pipeline was engineered.
+
+**Actions Completed:**
+* Authored a `Jenkinsfile` defining stages for SCM checkout, syntax validation, and container building.
+* Configured a local Jenkins server to pull directly from the GitHub repository.
+* Successfully executed the automated pipeline, resulting in a verified Docker image build.
+
+**Visual Proof: Pipeline Automation**
+![Jenkins Pipeline Success](./jenkins_pipeline_success.png)
